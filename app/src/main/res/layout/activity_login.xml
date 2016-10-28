@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_logo_big"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            tools:context="br.com.simplepass.cadevan.activity.LoginActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/phone_number_login_country"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="50dp"
+                    android:hint="@string/prompt_phone_number"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="+55"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    style="@style/edit_text_form"/>
+
+                <EditText
+                    android:id="@+id/phone_number_login"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="50dp"
+                    android:hint="@string/prompt_phone_number"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    style="@style/edit_text_form"/>
+
+            </LinearLayout>
+
+            <EditText android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_password"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_log_in"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginTop="5dp"
+                style="@style/edit_text_form"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/btn_recover_password"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/action_recover_password"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:layout_marginBottom="16dp"
+                    style="@style/button_default"/>
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/action_log_in"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:layout_marginBottom="16dp"
+                    style="@style/button_default"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="0dp"
+        android:layout_width="match_parent"
+        android:text="@string/action_register"
+        android:layout_height="50dp"
+        style="@style/button_at_bottom"/>
+</RelativeLayout>
+

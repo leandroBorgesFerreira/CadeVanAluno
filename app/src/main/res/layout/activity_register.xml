@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.simplepass.cadevan.activity.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_logo_big"
+        android:layout_gravity="center_horizontal"
+        android:transitionName="logoTransition"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/sign_in_phone_country"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                android:text="+55"
+                android:nextFocusForward="@+id/sign_in_phone_number"
+                style="@style/edit_text_form"/>
+
+            <EditText
+                android:id="@id/sign_in_phone_number"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_phone_number"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:layout_marginBottom="2dp"
+                style="@style/edit_text_form"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/sign_in_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_name"
+            android:singleLine="true"
+            android:layout_marginBottom="2dp"
+            style="@style/edit_text_form"/>
+
+        <EditText
+            android:id="@+id/sign_in_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:layout_marginBottom="2dp"
+            style="@style/edit_text_form"/>
+
+        <EditText android:id="@+id/sign_in_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_password"
+            android:imeActionId="@+id/register"
+            android:imeActionLabel="@string/action_register"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginBottom="2dp"
+            style="@style/edit_text_form"/>
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            style="@style/button_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/action_register"
+            android:transitionName="leftButton"/>
+
+    </LinearLayout>
+</LinearLayout>

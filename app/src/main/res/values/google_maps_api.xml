@@ -1,0 +1,18 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=B9:E7:D1:3C:54:52:32:E1:A4:8F:BE:1A:36:C6:6C:F7:C1:CE:DA:9F%3Bcom.simplepass.usuario.simplepass.maps
+
+    You can also add your credentials to an existing key, using this line:
+    B9:E7:D1:3C:54:52:32:E1:A4:8F:BE:1A:36:C6:6C:F7:C1:CE:DA:9F;com.simplepass.usuario.simplepass.maps
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" translatable="true" templateMergeStrategy="preserve">
+        AIzaSyCx8qhm7Ti8sBLBnYt80zqiQDP4mWW2XYg
+    </string>
+</resources>

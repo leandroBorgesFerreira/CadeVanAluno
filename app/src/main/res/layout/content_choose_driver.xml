@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="12dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.simplepass.cadevan.activity.ChooseDriverActivity"
+    tools:showIn="@layout/activity_choose_driver">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_driver"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"/>
+
+        <co.moonmonkeylabs.realmrecyclerview.RealmRecyclerView
+            android:id="@+id/driver_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:rrvIsRefreshable="true"
+            app:rrvLayoutType="LinearLayout"
+            app:rrvEmptyLayoutId="@layout/no_item_recycler_view"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        style="?android:attr/progressBarStyle" />
+
+</RelativeLayout>

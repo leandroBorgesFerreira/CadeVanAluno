@@ -1,0 +1,43 @@
+{
+  "project_info": {
+    "project_id": "cadevan-740b1",
+    "project_number": "425352603437",
+    "name": "CadeVan"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425352603437:android:f4d51500db2cfc5d",
+        "client_id": "android:br.com.simplepass.cadevan",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "br.com.simplepass.cadevan",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

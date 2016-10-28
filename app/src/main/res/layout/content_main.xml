@@ -1,0 +1,91 @@
+<RelativeLayout
+    android:id="@+id/content_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_main"
+    tools:context=".activity.MainActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="br.com.simplepass.cadevan.activity.MainActivity"
+        class="com.google.android.gms.maps.MapFragment"/>
+    
+    <TextView
+        android:id="@+id/looking_for_driver_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DAFF5722"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:text="@string/looking_for_driver_message"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_change_driver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/change_driver"
+        style="@style/button_default"
+        android:layout_alignParentBottom="true"/>
+
+    <!-- Botões do mapa -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="8dp">
+
+        <ImageButton
+            android:id="@+id/btn_maps_self_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_self_position"
+            android:background="@drawable/button_shape_maps"
+            android:padding="5dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_maps_self_position">
+
+            <ImageButton
+                android:id="@+id/btn_maps_zoom_plus"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_plus"
+                android:background="@drawable/button_shape_maps"
+                android:padding="5dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <ImageButton
+                android:id="@+id/btn_maps_zoom_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_minus"
+                android:background="@drawable/button_shape_maps"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

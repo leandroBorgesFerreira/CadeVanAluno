@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">CadeVan</string>
+    <string name="action_settings">Configurações</string>
+
+    <!-- Strings do menu Drawer-->
+    <string name="drawer_open">Abrir</string>
+    <string name="drawer_close">Fechar</string>
+    <string name="drawer_item_share">COMPARTILHAR</string>
+    <string name="drawer_item_leave">SAIR</string>
+
+    <!-- Mensagem de compartilhamento do app -->
+    <string name="share_message"> Não espere mais. Baixe o Simple Pass:
+        https://play.google.com/store/apps/details?id=br.com.simplepass.cadevan </string>
+
+    <!-- Mapas -->
+    <string name="maps_self_mark_snippet">Este é você</string>
+
+    <!-- Permissões -->
+    <string name="permission_rationale_location"> Essa permissão é necessária para o
+        sabermos sua localização</string>
+
+    <!-- String relacionada ao registro e login -->
+    <string name="prompt_name">Qual seu nome?</string>
+    <string name="prompt_birthdate">Quando você nasceu?</string>
+    <string name="prompt_phone_number">DDD + telefone</string>
+    <string name="action_register">Cadastrar</string>
+    <string name="prompt_email">Qual seu email?</string>
+    <string name="prompt_password">Senha. Ao menos 6 digitos</string>
+    <string name="action_log_in">Entrar</string>
+    <string name="action_recover_password">Recuperar Senha</string>
+
+    <!-- Erros do formulário -->
+    <string name="error_invalid_email">Esse endereço de email é inválido</string>
+    <string name="error_invalid_phone_number">Número de telefone inválido</string>
+    <string name="error_invalid_password_too_short">Senha muito curta</string>
+    <string name="error_incorrect_password">Senha incorreta</string>
+    <string name="error_field_required">Você precisa preencher esse campo</string>
+
+    <!-- Dialogs -->
+    <string name="registering">Registrando</string>
+    <string name="register_message">É rápido!</string>
+    <string name="title_activity_choose_driver">Escolher Motorista</string>
+    <string name="error_no_internet">Sem internet. </string>
+    <string name="dialog_looking_for_driver">Procurando motorista</string>
+
+    <!-- Text Views -->
+    <string name="choose_driver">Escolha o motorista</string>
+    <string name="no_drivers_available">Não há motoristas disponíveis. Atualize para ver os novos motoristas</string>
+    <string name="recover_password_message">Informe seu telefone</string>
+    <string name="looking_for_driver_message">Procurando motorista</string>
+
+    <!-- GCM -->
+    <string name="gcm_sender_id">425352603437</string>
+
+    <!-- Buttons in general -->
+    <string name="change_driver">TROCAR MOTORISTA</string>
+    <string name="title_activity_recover_password">Recuperar Senha</string>
+    <string name="send">ENVIAR</string>
+
+    <!-- Recover password -->
+    <string name="email_sent"> Email enviado para %s </string>
+
+    <!-- Dialog -->
+    <string name="dialog_wait">Aguarde</string>
+
+
+</resources>
